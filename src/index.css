@@ -1,5 +1,6 @@
 :root {
   --first-color: #d4bfae;
+  --second-color: #806e60
 }
 
 body {
@@ -15,6 +16,6 @@ body {
   color: var(--first-color);
 }
 
-a:hover {
+button:active {
   opacity: 0.5;
 }

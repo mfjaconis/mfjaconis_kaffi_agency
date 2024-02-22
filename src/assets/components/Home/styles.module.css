@@ -9,16 +9,17 @@
   width: 30%;
   padding: 100px 0;
   text-align: center;
+  border: 1.5px solid var(--second-color);
 }
 .imgLogo{
   width: 8vw;
   border-radius: 50%;
-  border: 3px solid var(--first-color);
+  border: 3px solid var(--second-color);
 }
 
 .btnRouters{
   background-color: white;
-  color: var(--first-color);
+  color: var(--second-color);
   padding: 20px;
   border-radius: 15px;
   border: 2px solid var(--first-color);
@@ -26,8 +27,13 @@
   width: 20vw;
   font-size: 15px;
   font-weight: bold;
+  cursor: pointer;
 }
 
+.btnRouters:hover{
+  background: var(--first-color);
+  color: white;
+}
 
 .title{
   width: 15vw;
