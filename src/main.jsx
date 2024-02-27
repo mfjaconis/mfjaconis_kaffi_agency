@@ -17,11 +17,11 @@ import "swiper/css/scrollbar";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "https://mfjaconis.github.io/mfjaconis_kaffi_agency/",
     element: <App />,
     children: [
       {
-        path: "https://mfjaconis.github.io/mfjaconis_kaffi_agency/",
+        path: "https://mfjaconis.github.io/mfjaconis_kaffi_agency/home",
         element: <Home />,
       },
       {
