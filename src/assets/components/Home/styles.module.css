@@ -11,6 +11,11 @@
   text-align: center;
   border: 1.5px solid var(--second-color);
 }
+
+.social{
+  display: flex;
+}
+
 .imgLogo{
   width: 8vw;
   border-radius: 50%;
