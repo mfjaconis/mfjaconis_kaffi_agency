@@ -13,7 +13,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { Social } from "./assets/components/Social/index.jsx";
 
 
 const router = createBrowserRouter([
@@ -22,16 +21,12 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "https://mfjaconis.github.io/mfjaconis_kaffi_agency/",
         element: <Home />,
       },
       {
-        path: "about",
+        path: "https://mfjaconis.github.io/mfjaconis_kaffi_agency/about",
         element: <Sobre />,
-      },
-      {
-        path: "social",
-        element: <Social />,
       },
     ],
   },
