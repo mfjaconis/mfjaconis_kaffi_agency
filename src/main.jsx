@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Social } from "./assets/components/Social/index.jsx";
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <Sobre />,
+      },
+      {
+        path: "social",
+        element: <Social />,
       },
     ],
   },
