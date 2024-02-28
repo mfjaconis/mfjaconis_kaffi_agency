@@ -1,7 +1,7 @@
 import { Route, BrowserRouter } from "react-router-dom";
 
-import { Home } from "./assets/components/Home";
-import { Sobre } from "./assets/components/Sobre";
+import { Home } from "./Home";
+import { Sobre } from "./Sobre";
 
 const Routes = () => {
   return (
