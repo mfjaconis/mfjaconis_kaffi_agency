@@ -17,15 +17,15 @@ import "swiper/css/scrollbar";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/mfjaconis_kaffi_agency/",
     element: <App />,
     children: [
       {
-        path: "/",
+        path: "/mfjaconis_kaffi_agency/", // Rota raiz vazia para corresponder à HOME
         element: <Home />,
       },
       {
-        path: "about",
+        path: "about", // Caminho "about" para o componente Sobre
         element: <Sobre />,
       },
     ],

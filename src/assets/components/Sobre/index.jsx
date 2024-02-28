@@ -1,4 +1,7 @@
 import logoKaffi from "../../images/logo-kaffi_agency_mkt.png";
+import Icon from '@mdi/react';
+import { mdiArrowLeftBold } from '@mdi/js';
+import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -36,27 +39,37 @@ export function Sobre() {
   ];
 
   return (
-    <div className={styles.container}>
-      <Swiper
-        style={{
-          "--swiper-pagination-color": "var(--second-color)",
-          "--swiper-navigation-color": "var(--second-color)",
-        }}
-        slidesPerView={1}
-        pagination={true}
-        navigation
-        className={styles.swiper}
-      >
-        {data.map((item) => (
-          <SwiperSlide className={styles.content} key={item.id}>
-            <h1 className={styles.title}> {item.title} </h1>
-            {item.image && (
-              <img className={styles.img} src={item.image} alt="Slider" />
-            )}
-            <p className={styles.paragraph}>{item.text}</p>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
+    <>
+      <section className={styles.container}>
+        <div>
+          <Link to="/mfjaconis_kaffi_agency/" className={styles.home}>
+          <Icon className={styles.arrow} vertical path={mdiArrowLeftBold} size={1} /> Voltar
+          
+          </Link>
+        </div>
+        <div className={styles.content}>
+          <Swiper
+            style={{
+              "--swiper-pagination-color": "var(--second-color)",
+              "--swiper-navigation-color": "var(--second-color)",
+            }}
+            slidesPerView={1}
+            pagination={true}
+            navigation
+            className={styles.swiper}
+          >
+            {data.map((item) => (
+              <SwiperSlide key={item.id}>
+                <h1 className={styles.title}> {item.title} </h1>
+                {item.image && (
+                  <img className={styles.img} src={item.image} alt="Slider" />
+                )}
+                <p className={styles.paragraph}>{item.text}</p>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+      </section>
+    </>
   );
 }

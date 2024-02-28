@@ -11,16 +11,20 @@
   text-align: center;
   border: 1.5px solid var(--second-color);
 }
-.imgLogo{
-  width: 8vw;
+.imgLogo {
+  width: 15vw;
   border-radius: 50%;
   border: 3px solid var(--second-color);
+  margin-bottom: 20px;
 }
 
-.linkRouters{
+.linkRoutersSocial{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   color: var(--second-color);
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 15px;
   border: 2px solid var(--first-color);
   text-transform: uppercase;
@@ -28,15 +32,182 @@
   font-size: 15px;
   font-weight: bold;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
-.btnRouters:hover{
+.icon{
+  margin-right: 10px;
+}
+
+.linkRouters {
+  background-color: white;
+  color: var(--second-color);
+  padding: 13px 20px;
+  border-radius: 15px;
+  border: 2px solid var(--first-color);
+  text-transform: uppercase;
+  width: 20vw;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btnRouters:hover {
   background: var(--first-color);
   color: white;
 }
 
-.title{
-  width: 15vw;
+.title {
   font-size: 28px;
   font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    width: 70%;
+  }
+  .title {
+    font-size: 35px;
+  }
+
+  .imgLogo {
+    width: 35vw;
+  }
+
+  .linkRouters {
+    width: 63vw;
+    font-size: 15px;
+    padding: 12px 0;
+  }
+  .linkRoutersSocial{
+    width: 60vw;
+    font-size: 15px;
+    padding: 10px 5px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+  .title {
+    font-size: 30px;
+    margin: 40px;
+  }
+
+  .imgLogo {
+    width: 35vw;
+  }
+
+  .linkRouters {
+    width: 62vw;
+    font-size: 20px;
+    padding: 12px 0;
+  }
+  .linkRoutersSocial{
+    width: 61vw;
+    font-size: 20px;
+    padding: 12px 5px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    width: 70%;
+  }
+  .title {
+    font-size: 30px;
+    margin: 40px;
+  }
+
+  .imgLogo {
+    width: 35vw;
+  }
+
+  .linkRouters {
+    width: 61.5vw;
+    font-size: 15px;
+    padding: 12px 0;
+  }
+  .linkRoutersSocial{
+    width: 60vw;
+    font-size: 15px;
+    padding: 10px 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 70%;
+  }
+  .title {
+    font-size: 30px;
+    margin: 40px;
+  }
+
+  .imgLogo {
+    width: 35vw;
+  }
+
+  .linkRouters {
+    width: 61.5vw;
+    font-size: 15px;
+    padding: 12px 0;
+  }
+  .linkRoutersSocial{
+    width: 60vw;
+    font-size: 15px;
+    padding: 10px 5px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    width: 70%;
+  }
+  .title {
+    font-size: 30px;
+  }
+
+  .imgLogo {
+    width: 35vw;
+  }
+
+  .linkRouters {
+    width: 63vw;
+    font-size: 12px;
+    padding: 14.5px 0;
+  }
+  .linkRoutersSocial{
+    width: 60vw;
+    font-size: 15px;
+    padding: 10px 5px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .container {
+    width: 70%;
+  }
+  .title {
+    font-size: 25px;
+  }
+
+  .imgLogo {
+    width: 25vw;
+  }
+
+  .linkRouters {
+    width: 50vw;
+    font-size: 10px;
+    padding: 11px 0;
+  }
+
+  .linkRoutersSocial{
+    width: 48vw;
+    font-size: 10px;
+    padding: 5px 5px;
+  }
 }
