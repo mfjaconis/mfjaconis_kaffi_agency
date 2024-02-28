@@ -1,5 +1,7 @@
 import { register } from "swiper/element/bundle";
-import { Outlet } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
+import { Home } from "./assets/components/Home";
+import { Sobre } from "./assets/components/Sobre";
 
 register();
 import "swiper/css";
@@ -13,7 +15,12 @@ function App() {
   return (
     <>
       <main className={styles.container}>
-        <Outlet />
+        <Home />
+        <Switch>
+          <Route exact path="/about">
+            <Sobre />
+          </Route>
+        </Switch>
       </main>
     </>
   );

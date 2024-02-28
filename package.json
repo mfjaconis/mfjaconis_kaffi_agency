@@ -1,5 +1,5 @@
 {
-  "homepage": "https://mfjaconis.github.io/mfjaconis_kaffi_agency",
+  "homepage": "https://mfjaconis.github.io/mfjaconis_kaffi_agency/",
   "name": "keffi_agency",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d dist"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
