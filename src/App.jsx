@@ -1,4 +1,5 @@
-import { Routes } from "./assets/components/Routes";
+import Routes from "./Routes.jsx";
+
 
 import { register } from "swiper/element/bundle";
 import "swiper/css";
