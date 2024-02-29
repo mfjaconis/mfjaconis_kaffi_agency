@@ -61,7 +61,10 @@ export function Sobre() {
             }}
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             slidesPerView={1}
-            pagination={{ clickable: true }}
+            pagination={{
+              clickable: true,
+
+            }}
             navigation={{
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
