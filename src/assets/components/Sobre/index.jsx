@@ -1,9 +1,10 @@
 import logoKaffi from "../../images/logo-kaffi_agency_mkt.png";
-import Icon from '@mdi/react';
-import { mdiArrowLeftBold } from '@mdi/js';
+import Icon from "@mdi/react";
+import { mdiArrowLeftBold } from "@mdi/js";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 
 export function Sobre() {
   const data = [
@@ -43,8 +44,13 @@ export function Sobre() {
       <section className={styles.container}>
         <div>
           <Link to="/mfjaconis_kaffi_agency/" className={styles.home}>
-          <Icon className={styles.arrow} vertical path={mdiArrowLeftBold} size={1} /> Voltar
-          
+            <Icon
+              className={styles.arrow}
+              vertical
+              path={mdiArrowLeftBold}
+              size={1}
+            />
+            Voltar
           </Link>
         </div>
         <div className={styles.content}>
@@ -53,11 +59,16 @@ export function Sobre() {
               "--swiper-pagination-color": "var(--second-color)",
               "--swiper-navigation-color": "var(--second-color)",
             }}
+            modules={[Navigation, Pagination, Scrollbar, A11y]}
             slidesPerView={1}
-            pagination={true}
-            navigation
+            pagination={{ clickable: true }}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
             className={styles.swiper}
           >
+            <div className={`${styles.swiperButton} swiper-button-prev`}></div>
             {data.map((item) => (
               <SwiperSlide key={item.id}>
                 <h1 className={styles.title}> {item.title} </h1>
@@ -67,6 +78,7 @@ export function Sobre() {
                 <p className={styles.paragraph}>{item.text}</p>
               </SwiperSlide>
             ))}
+            <div className={`${styles.swiperButton} swiper-button-next`}></div>
           </Swiper>
         </div>
       </section>
