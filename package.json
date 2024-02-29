@@ -1,5 +1,5 @@
 {
-  "homepage": "https://mfjaconis.github.io/mfjaconis_kaffi_agency",
+  "homepage": "https://mfjaconis.github.io/mfjaconis_kaffi_agency/",
   "name": "keffi_agency",
   "private": true,
   "version": "0.0.0",
@@ -13,6 +13,8 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@mdi/js": "^7.4.47",
+    "@mdi/react": "^1.6.1",
     "bootstrap": "^5.3.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
@@ -20,7 +22,7 @@
     "react-router-dom": "^6.22.1",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.0.6"
+    "swiper": "^11.0.7"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
