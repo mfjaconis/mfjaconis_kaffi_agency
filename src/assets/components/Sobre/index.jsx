@@ -49,7 +49,7 @@ export function Sobre() {
               vertical
               path={mdiArrowLeftBold}
               size={1}
-            />{" "}
+            />
             Voltar
           </Link>
         </div>
@@ -61,7 +61,7 @@ export function Sobre() {
             }}
             modules={[Navigation, Pagination, Scrollbar, A11y]}
             slidesPerView={1}
-            pagination
+            pagination={{ clickable: true }}
             navigation={{
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
